@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Week from './components/Week';
+import Day from './components/Day';
+import Task from './components/Task';
+import Button from './components/Button';
 
 function App() {
+  // Зараз ми просто створюємо фіктивні дані, щоб показати структуру. Вони будуть замінені реальними даними пізніше.
+  const dummyDays = [
+    { name: 'Monday', tasks: [{ title: 'Task 1', description: 'Do something', startTime: '09:00', endTime: '10:00' }] },
+    // ... інші дні
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Week days={dummyDays} />
+      {/* Тут можуть бути інші компоненти, такі як DayExpanded, NewTaskForm тощо */}
     </div>
   );
 }
