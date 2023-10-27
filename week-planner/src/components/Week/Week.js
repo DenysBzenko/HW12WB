@@ -1,32 +1,16 @@
 import React, { useState } from 'react';
-import Day from 'src/components/Day/Day.js';
-import NewTaskForm from 'src/components/NewTaskForm/NewTaskForm.js';
+import Day from '../Day/Day.js'; 
+import NewTaskForm from '../NewTaskForm/NewTaskForm.js'; 
 
 function Week() {
     const [tasks, setTasks] = useState([
-        {
-            dayName: 'Понеділок',
-            tasks: []
-        },
-        {
-            dayName: 'Вівторок',
-            tasks: []
-        },{
-            dayName: 'Середа',
-            tasks: []
-        },{
-            dayName: 'Четвер',
-            tasks: []
-        },{
-            dayName: 'Пятниця',
-            tasks: []
-        },{
-            dayName: 'Субота',
-            tasks: []
-        },{
-            dayName: 'Неділя',
-            tasks: []
-        },
+        { dayName: 'Понеділок', tasks: [] },
+        { dayName: 'Вівторок', tasks: [] },
+        { dayName: 'Середа', tasks: [] },
+        { dayName: 'Четвер', tasks: [] },
+        { dayName: 'Пятниця', tasks: [] },
+        { dayName: 'Субота', tasks: [] },
+        { dayName: 'Неділя', tasks: [] },
     ]);
 
     const handleAddTask = (dayName, task) => {

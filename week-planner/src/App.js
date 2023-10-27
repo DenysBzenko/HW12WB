@@ -1,5 +1,6 @@
 import React from 'react';
-import Week from 'src/components/Week/Week.js';
+import Week from './components/Week/Week.js';
+
 
 function App() {
     return (

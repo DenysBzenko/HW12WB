@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.day-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.day-item.active {
+  background-color: #e0e0e0; 
+}

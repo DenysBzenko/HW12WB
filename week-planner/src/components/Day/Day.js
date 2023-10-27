@@ -1,6 +1,5 @@
 import React from 'react';
-import Task from 'src/components/Task/Task.js';
-
+import Task from '../Task/Task.js';
 
 function Day({ dayName, tasks }) {
     return (
